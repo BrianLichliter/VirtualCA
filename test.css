@@ -6,5 +6,11 @@ body{
 }
 
 .vertical-offset-100{
-    padding-top:1px;
+    padding-top:20px;
+}
+
+.CA_Title{
+	text-align: center;
+	font-size: 300%;
+	padding-top:10px;
 }
