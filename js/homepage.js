@@ -1,5 +1,9 @@
 $(document).ready(function() {
-	$('.dropdown-menu li a').click(function() {
-    	alert($(this).text());
+	$('#formselection').click(function() {
+    	var form = $( "#formselect" ).val();
+    	if (form == "duty") {
+    		window.location.href = "DutyLog.html";
+    	}
+
 	});
 });
