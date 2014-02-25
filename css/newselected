@@ -14,14 +14,15 @@
 .menubar .new {
 	color: white;
 	text-decoration: none;
+  font-size: 125%;
 	display: block;
   background-color: #16C0FF;
   margin: 0px;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   position: relative;
   text-align: center;
-  line-height: 80px;
+  line-height: 100px;
   border-radius: 50%;
 }
 
