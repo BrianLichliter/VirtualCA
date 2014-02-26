@@ -10,14 +10,19 @@
   z-index: 1;
 }
 
+#settings {
+  position: relative;
+  top: -10px;
+}
+
 .logo {
   position: relative;
 	color: white;
   text-align: center;
   padding-top: 0px;
   font-size: 400%;
-  left: -30px;
-  top: -10px;
+  left: -50px;
+  top: 20px;
 }
 
 .menubar .new {
