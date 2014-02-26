@@ -1,56 +1,60 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Minimum Setup</title>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Calendar Widget that will make your day</title>
+    <meta name="distributor" content="Global" />
+    <meta itemprop="contentRating" content="General" />
+    <meta name="robots" content="All" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="description" content="The source of truly unique and awesome jquery plugins." />
+    <meta name="keywords" content="slider, carousel, responsive, swipe, one to one movement, touch devices, jquery, plugin, bootstrap compatible, html5, css3" />
+    <meta name="author" content="w3widgets.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/calendar.min.css">
-</head>
-<body>
-    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/underscore-min.js"></script>
-    <script type="text/javascript" src="js/calendar.js"></script>
+    <!-- Respomsive slider -->
+    <link href="css/responsive-calendar.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Responsive calendar - START -->
+    	<div class="responsive-calendar">
+        <div class="controls">
+            <a class="pull-left" data-go="prev"><div class="btn btn-primary">Prev</div></a>
+            <h4><span data-head-year></span> <span data-head-month></span></h4>
+            <a class="pull-right" data-go="next"><div class="btn btn-primary">Next</div></a>
+        </div><hr/>
+        <div class="day-headers">
+          <div class="day header">Mon</div>
+          <div class="day header">Tue</div>
+          <div class="day header">Wed</div>
+          <div class="day header">Thu</div>
+          <div class="day header">Fri</div>
+          <div class="day header">Sat</div>
+          <div class="day header">Sun</div>
+        </div>
+        <div class="days" data-group="days">
+          
+        </div>
+      </div>
+      <!-- Responsive calendar - END -->
+    </div>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/responsive-calendar.js"></script>
     <script type="text/javascript">
-        var calendar = $("#calendar").calendar(
-        {
-            tmpl_path: "tmpls/",
-            events_source: function () { return []; }
+      $(document).ready(function () {
+        $(".responsive-calendar").responsiveCalendar({
+          time: '2013-05',
+          events: {
+            "2013-04-30": {"number": 5, "url": "http://w3widgets.com/responsive-slider"},
+            "2013-04-26": {"number": 1, "url": "http://w3widgets.com"}, 
+            "2013-05-03":{"number": 1}, 
+            "2013-06-12": {}}
         });
+      });
     </script>
-	<div class="row">
-		<div class="col-md-9">
-			<div id="calendar"></div>
-		</div>
-		<div class="col-md-3">
-			<div class="row">
-				<select id="first_day" class="form-control">
-					<option value="" selected="selected">First day of week language-dependant</option>
-					<option value="2">First day of week is Sunday</option>
-					<option value="1">First day of week is Monday</option>
-				</select>
-				<select id="language" class="form-control">
-					<option value="">Select Language (default: en-US)</option>
-					<option value="nl-NL">Dutch</option>
-					<option value="fr-FR">French</option>
-					<option value="de-DE">German</option>
-					<option value="el-GR">Greek</option>
-					<option value="it-IT">Italian</option>
-					<option value="pl-PL">Polish</option>
-					<option value="pt-BR">Portuguese (Brazil)</option>
-					<option value="es-MX">Spanish (Mexico)</option>
-					<option value="es-ES">Spanish (Spain)</option>
-					<option value="ru-RU">Russian</option>
-					<option value="sv-SE">Swedish</option>
-				</select>
-				<label class="checkbox">
-					<input type="checkbox" value="#events-modal" id="events-in-modal"> Open events in modal window
-				</label>
-			</div>
-
-			<h4>Events</h4>
-			<small>This list is populated with events dynamically</small>
-			<ul id="eventlist" class="nav nav-list"></ul>
-		</div>
-	</div>
-</body>
+  </body>
 </html>
