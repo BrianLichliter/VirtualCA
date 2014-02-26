@@ -1,0 +1,19 @@
+#formControls {
+	background-color: yellowgreen;
+	padding-top: 175px;
+	padding-bottom: 40px;
+}
+
+#formContainer {
+	background-color: pink;
+}
+
+.formOptions {
+	margin: 0px;
+	padding: 0px;
+}
+
+.formLabel {
+	text-align: right;
+	padding-top: 5px;
+}
