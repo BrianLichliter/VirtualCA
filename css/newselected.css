@@ -18,11 +18,11 @@
 	display: block;
   background-color: #16C0FF;
   margin: 0px;
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   position: relative;
   text-align: center;
-  line-height: 100px;
+  line-height: 125px;
   border-radius: 50%;
   top: 80px;
 }
@@ -33,11 +33,11 @@
 	  display: block;
   background-color: #1299CC;
   margin: 0px;
-  width: 80px;
-  height: 80px;
+  width: 125px;
+  height: 125px;
   position: relative;
   text-align: center;
-  line-height: 80px;
+  line-height: 125px;
   border-radius: 50%;
 }
 

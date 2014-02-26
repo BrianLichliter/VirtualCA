@@ -4,6 +4,5 @@ $(document).ready(function() {
     	if (form == "duty") {
     		window.location.href = "DutyLog.html";
     	}
-
 	});
 });

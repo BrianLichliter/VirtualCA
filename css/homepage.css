@@ -4,25 +4,36 @@
   padding-top: 40px;
 }
 
+#fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
 .logo {
+  position: relative;
 	color: white;
   text-align: center;
   padding-top: 0px;
   font-size: 400%;
+  left: -30px;
+  top: -10px;
 }
 
 .menubar .new {
 	color: white;
 	text-decoration: none;
 	display: block;
+  font-size: 125%;
   background-color: #16C0FF;
   margin: 0px;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   position: relative;
   text-align: center;
-  line-height: 80px;
+  line-height: 100px;
   border-radius: 50%;
+  top: -15px;
 }
 
 .menubar .draft {
@@ -31,40 +42,46 @@
 	display: block;
   background-color: #1299CC;
   margin: 0px;
-  width: 80px;
-  height: 80px;
+  font-size: 125%;
+  width: 100px;
+  height: 100px;
   position: relative;
   text-align: center;
-  line-height: 80px;
+  line-height: 100px;
   border-radius: 50%;
+  top: -15px;
 }
 
 .menubar .archive {
 	color: white;
 	text-decoration: none;
+  font-size: 125%;
   display: block;
   background-color: #0B607F;
   margin: 0px;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   position: relative;
   text-align: center;
-  line-height: 80px;
+  line-height: 100px;
   border-radius: 50%;
+  top: -15px;
 }
 
 .menubar .settings {
 	color: white;
+  font-size: 125%;
 	text-decoration: none;
 	display: block;
   background-color: black;
   margin: 0px;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   position: relative;
   text-align: center;
-  line-height: 80px;
+  line-height: 100px;
   border-radius: 50%;
+  top: -15px;
 }
 
 .menubar a:hover{
