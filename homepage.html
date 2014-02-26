@@ -23,7 +23,7 @@
   					<center><a class = "icon new" data-toggle = "modal" data-target = "#myModalNew">New</a></center>	
   				</div>
   				<div class = "col-xs-4">
-  					<a href = "#" class = "icon draft">Drafts</a>
+  					<center><a class = "icon draft" data-toggle = "modal" data-target = "#draftsModal">Drafts</a></center>
   				</div>
   				<div class = "col-xs-4">
   					<a href = "calendar.html" class = "icon archive">Archive</a>
@@ -73,6 +73,39 @@
   			</div>
   		</div>
   	</div>
+
+<div class="modal fade" id="draftsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Draft</h4>
+          </div>
+          <div class="modal-body">
+            <div class = "row">
+              <div class = "col-xs-offset-3 col-xs-6">
+                <div class = "row">
+                  <div class = "col-xs-offset-2 col-xs-8">
+                    <h3>Select a draft</h3>
+                  </div>
+                </div>
+                <div class = "row">
+                  <select class="form-control" size = "6" id = "formselect">
+                    <option value="duty">Duty Log (2 hours ago)</option>
+                    <option value="proposal">Event Proposal (yesterday)</option>
+                    <option value="evaluation">Event Evaluation (02/25/14) </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer" id = "loginButtonModal">
+            <button type="button" class="btn btn-primary" id = "formselection">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
