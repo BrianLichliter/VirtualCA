@@ -1,5 +1,4 @@
 .menubar {
-	padding-top: 0px;
 	background-color: #2E6A7F;
   padding-top: 40px;
 }
@@ -21,8 +20,7 @@
   text-align: center;
   padding-top: 0px;
   font-size: 400%;
-  left: -50px;
-  top: 20px;
+  top: -20px;
 }
 
 .menubar .new {
