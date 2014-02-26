@@ -1,6 +1,6 @@
 .menubar {
 	background-color: #2E6A7F;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 #fixed {
@@ -11,7 +11,7 @@
 
 #settings {
   position: relative;
-  top: -10px;
+  top: -5px;
   left: 50px;
 }
 
@@ -19,7 +19,7 @@
   position: relative;
   font-size: 400%;
   margin: 0 auto;
-  top: -20px;
+  top: -15px;
   left: 20px;
 }
 
@@ -36,7 +36,7 @@
   text-align: center;
   line-height: 100px;
   border-radius: 50%;
-  top: -15px;
+  top: -10px;
 }
 
 .menubar .draft {
@@ -52,7 +52,7 @@
   text-align: center;
   line-height: 100px;
   border-radius: 50%;
-  top: -15px;
+  top: -10px;
 }
 
 .menubar .archive {
@@ -68,7 +68,7 @@
   text-align: center;
   line-height: 100px;
   border-radius: 50%;
-  top: -15px;
+  top: -10px;
 }
 
 .menubar a:hover{
