@@ -1,3 +1,4 @@
+/*MENUBAR CSS*/
 .menubar {
 	background-color: #2E6A7F;
   padding-top: 10px;
@@ -36,7 +37,6 @@
   text-align: center;
   line-height: 100px;
   border-radius: 50%;
-  top: 3px;
 }
 
 .menubar .draft {
@@ -52,7 +52,6 @@
   text-align: center;
   line-height: 100px;
   border-radius: 50%;
-  top: 3px;
 }
 
 .menubar .archive {
@@ -68,9 +67,32 @@
   text-align: center;
   line-height: 100px;
   border-radius: 50%;
-  top: 3px;
 }
 
 .menubar a:hover{
 	box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+}
+
+/*CA NOW CSS*/
+
+#CAnow {
+  padding-top: 150px;
+  margin: 0 auto;
+}
+
+.info {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-left: 2px solid #2E6A7F;
+  border-right: 2px solid #2E6A7F;
+  border-top: 2px solid #2E6A7F;
+  border-bottom: 2px solid #2E6A7F;
+  background-color: #F0F8FF;
+}
+
+#CAnowLeft {
+}
+
+#CAnowRight {
+
 }

@@ -1,129 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Responsive Calendar Widget that will make your day</title>
-    <meta name="distributor" content="Global" />
-    <meta itemprop="contentRating" content="General" />
-    <meta name="robots" content="All" />
-    <meta name="revisit-after" content="7 days" />
-    <meta name="description" content="The source of truly unique and awesome jquery plugins." />
-    <meta name="keywords" content="slider, carousel, responsive, swipe, one to one movement, touch devices, jquery, plugin, bootstrap compatible, html5, css3" />
-    <meta name="author" content="w3widgets.com">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Respomsive slider -->
-    <link href="css/responsive-calendar.css" rel="stylesheet">
-      <link href="css/homepage.css" rel="stylesheet">
-      <link href="css/calendar.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class = "fluid-container" id = "fixed">
-      <div class = "row menubar">
-        <div class = "col-xs-2">
-          <a href = "homepage.html" id = "logo"><img src = "img/logo.png" class = "img-responsive"></a>
-        </div>
-        <div class = "col-xs-offset-1 col-xs-6">
-          <div class = "col-xs-4">
-            <center><a class = "icon new" data-toggle = "modal" data-target = "#myModalNew">New</a></center>  
-          </div>
-          <div class = "col-xs-4">
-            <a href = "#" class = "icon draft">Drafts</a>
-          </div>
-          <div class = "col-xs-4">
-            <a href = "calendar.html" class = "icon archive">Archive</a>
-          </div>
-        </div>
-        <div class = "col-xs-offset-1 col-xs-2" id = "settings">
-          <button type = "button" class = "btn btn-primary">Log Out</button>
-          <br>
-          <br>
-          <button type = "button" class = "btn btn-info">Settings</button>
-        </div>
-      </div>
-    </div>
-    <div class="container" id = "calendar">
-      <div class = "row">
-        <div class = "col-xs-8">
-          <!-- Responsive calendar - START -->
-        	<div class="responsive-calendar">
-            <div class="controls">
-                <a class="pull-left" data-go="prev"><div class="btn btn-primary">Prev</div></a>
-                <h4><span data-head-year></span> <span data-head-month></span></h4>
-                <a class="pull-right" data-go="next"><div class="btn btn-primary">Next</div></a>
-            </div><hr/>
-            <div class="day-headers">
-              <div class="day header">Mon</div>
-              <div class="day header">Tue</div>
-              <div class="day header">Wed</div>
-              <div class="day header">Thu</div>
-              <div class="day header">Fri</div>
-              <div class="day header">Sat</div>
-              <div class="day header">Sun</div>
-            </div>
-            <div class="days" data-group="days">
-            </div>
-          </div>
-          <!-- Responsive calendar - END -->
-        </div>
-        <div class = "col-xs-4" id = "display">
-        </div>
-    </div>
+<head>
+	<meta charset="utf-8">
+	<title>Responsive Calendar Widget that will make your day</title>
+	<meta name="distributor" content="Global" />
+	<meta itemprop="contentRating" content="General" />
+	<meta name="robots" content="All" />
+	<meta name="revisit-after" content="7 days" />
+	<meta name="description" content="The source of truly unique and awesome jquery plugins." />
+	<meta name="keywords" content="slider, carousel, responsive, swipe, one to one movement, touch devices, jquery, plugin, bootstrap compatible, html5, css3" />
+	<meta name="author" content="w3widgets.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Respomsive slider -->
+	<link href="css/responsive-calendar.css" rel="stylesheet">
+	<link href="css/homepage.css" rel="stylesheet">
+	<link href="css/calendar.css" rel="stylesheet">
+</head>
+<body>
+	<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+  	<div class = "fluid-container" id = "fixed">
+  		<div class = "row menubar">
+	  		<div class = "col-xs-2">
+	  			<a href = "homepage.html" id = "logo"><img src = "img/logo.png" class = "img-responsive"></a>
+	  		</div>
+  			<div class = "col-xs-offset-1 col-xs-6">
+  				<div class = "col-xs-4">
+  					<center><a class = "icon new" data-toggle = "modal" data-target = "#myModalNew">New</a></center>	
+  				</div>
+  				<div class = "col-xs-4">
+  					<center><a class = "icon draft" data-toggle = "modal" data-target = "#draftsModal">Drafts</a></center>
+  				</div>
+  				<div class = "col-xs-4">
+  					<a href = "calendar.html" class = "icon archive">Archive</a>
+  				</div>
+  			</div>
+  			<div class = "col-xs-offset-1 col-xs-2" id = "settings">
+  				<button type = "button" class = "btn btn-primary">Log Out</button>
+  				<br>
+  				<br>
+  				<button type = "button" class = "btn btn-info">Settings</button>
+  			</div>
+  		</div>
+  	</div>
+	<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+	<!-- Modal -->
+	<div class="modal fade" id="myModalNew" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">New</h4>
+				</div>
+				<div class="modal-body">
+					<div class = "row">
+						<div class = "col-xs-offset-3 col-xs-6">
+							<div class = "row">
+								<div class = "col-xs-offset-2 col-xs-8">
+									<h3>Select a form</h3>
+								</div>
+							</div>
+							<div class = "row">
+								<select class="form-control" size = "6" id = "formselect">
+									<option value="duty">Duty Log</option>
+									<option value="proposal">Event Proposal</option>
+									<option value="evaluation">Event Evaluation</option>
+									<option value="reimbursement">Reimbursement Request</option>
+									<option value="maintenance">Maintenance Report</option>
+									<option value="incident">Incident Report</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer" id = "loginButtonModal">
+					<button type="button" class="btn btn-primary" id = "formselection">Start</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="draftsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">Drafts</h4>
+				</div>
+				<div class="modal-body">
+					<div class = "row">
+						<div class = "col-xs-offset-3 col-xs-6">
+							<div class = "row">
+								<div class = "col-xs-offset-2 col-xs-8">
+									<h3>Select a draft</h3>
+								</div>
+							</div>
+							<div class = "row">
+								<select class="form-control" size = "6" id = "formselect">
+									<option value="duty">Duty Log (2 hours ago)</option>
+									<option value="proposal">Event Proposal (yesterday)</option>
+									<option value="evaluation">Event Evaluation (02/25/14) </option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer" id = "loginButtonModal">
+					<button type="button" class="btn btn-primary" id = "formselection">Continue</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+	<div class="container" id = "calendar">
+		<div class = "row">
+			<div class = "col-xs-8">
+				<!-- Responsive calendar - START -->
+				<div class="responsive-calendar">
+					<div class="controls">
+						<a class="pull-left" data-go="prev"><div class="btn btn-primary">Prev</div></a>
+						<h4><span data-head-year></span> <span data-head-month></span></h4>
+						<a class="pull-right" data-go="next"><div class="btn btn-primary">Next</div></a>
+					</div><hr/>
+					<div class="day-headers">
+						<div class="day header">Mon</div>
+						<div class="day header">Tue</div>
+						<div class="day header">Wed</div>
+						<div class="day header">Thu</div>
+						<div class="day header">Fri</div>
+						<div class="day header">Sat</div>
+						<div class="day header">Sun</div>
+					</div>
+					<div class="days" data-group="days">
+					</div>
+				</div>
+				<!-- Responsive calendar - END -->
+			</div>
+			<div class = "col-xs-4" id = "display">
+			</div>
+		</div>
+	</div>
+	<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/homepage.js"></script>
+	<script src="js/responsive-calendar.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".responsive-calendar").responsiveCalendar({
+				time: '2014-02',
+				events: {
+					"2013-04-30": {"number": 5, "url": "http://w3widgets.com/responsive-slider"},
+					"2013-04-26": {"number": 1, "url": "http://w3widgets.com"}, 
+					"2013-05-03":{"number": 1}, 
+					"2013-06-12": {}}
+				});
+		});
+	</script>
 
-    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    <!-- Modal -->
-    <div class="modal fade" id="myModalNew" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel">New</h4>
-          </div>
-          <div class="modal-body">
-            <div class = "row">
-              <div class = "col-xs-offset-3 col-xs-6">
-                <div class = "row">
-                  <div class = "col-xs-offset-2 col-xs-8">
-                    <h3>Select a form</h3>
-                  </div>
-                </div>
-                <div class = "row">
-                  <select class="form-control" size = "6" id = "formselect">
-                    <option value="duty">Duty Log</option>
-                    <option value="proposal">Event Proposal</option>
-                    <option value="evaluation">Event Evaluation</option>
-                    <option value="reimbursement">Reimbursement Request</option>
-                    <option value="maintenance">Maintenance Report</option>
-                    <option value="incident">Incident Report</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer" id = "loginButtonModal">
-            <button type="button" class="btn btn-primary" id = "formselection">Start</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/homepage.js"></script>
-    <script src="js/responsive-calendar.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $(".responsive-calendar").responsiveCalendar({
-          time: '2014-02',
-          events: {
-            "2013-04-30": {"number": 5, "url": "http://w3widgets.com/responsive-slider"},
-            "2013-04-26": {"number": 1, "url": "http://w3widgets.com"}, 
-            "2013-05-03":{"number": 1}, 
-            "2013-06-12": {}}
-        });
-      });
-    </script>
-
-  </body>
+</body>
 </html>
