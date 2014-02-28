@@ -36,10 +36,7 @@ h2.weather
     border-bottom: 1px solid #999;
 }
 
-.fullDay:hover
-{
-    background-color: #4C7DAD;
-}
+
 
 .lastUpdate
 {
