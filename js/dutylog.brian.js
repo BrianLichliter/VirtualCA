@@ -14,4 +14,14 @@ $(document).ready(function() {
 			$("#submit").attr("disabled","disabled");
 		}
 	});
+	$("#submit").click(function() {
+		bootbox.confirm("Are you sure?", function(result) {
+				if(result==true) {
+					window.location.href="homepage.html";
+				}
+
+                console.log("Alert Callback");
+            });
+	});
+
 });
