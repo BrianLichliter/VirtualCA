@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Responsive Calendar Widget that will make your day</title>
+	<title>Archive</title>
 	<meta name="distributor" content="Global" />
 	<meta itemprop="contentRating" content="General" />
 	<meta name="robots" content="All" />
@@ -98,7 +98,7 @@
 							</div>
 							<div class = "row">
 								<select class="form-control" size = "6" id = "formselect">
-									<option value="duty">Duty Log (2 hours ago)</option>
+									<option value="duty">   Duty Log 02/07/14 </option>
 									<option value="proposal">Event Proposal (yesterday)</option>
 									<option value="evaluation">Event Evaluation (02/25/14) </option>
 								</select>
@@ -107,7 +107,7 @@
 					</div>
 				</div>
 				<div class="modal-footer" id = "loginButtonModal">
-					<button type="button" class="btn btn-primary" id = "formselection">Continue</button>
+					<a href = "DutyLog_draft.html"> <button type="button" class="btn btn-primary" id = "formselection">Continue</button> </a>
 				</div>
 			</div>
 		</div>
@@ -138,6 +138,11 @@
 				<!-- Responsive calendar - END -->
 			</div>
 			<div class = "col-xs-4" id = "display">
+			<p id=title> Friday, February 7th</p>
+			
+			<a href = "DutyLog_complete.html" class= "cal_link"> <span id="form"> Duty Log </span>  Jane Doe </a> </br>
+			<a href = # class= "cal_link"> <span id="form">Event Proposal </span>  John Smith </a> </br>
+			<a href = # class= "cal_link"> <span id="form"> Matainence Request </span> Jane Doe</a> </br>
 			</div>
 		</div>
 	</div>
@@ -155,7 +160,10 @@
 					"2013-04-26": {"number": 1, "url": "http://w3widgets.com"}, 
 					"2013-05-03":{"number": 1}, 
 					"2013-06-12": {}}
+					
 				});
+				
+		
 		});
 	</script>
 
