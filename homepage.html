@@ -30,10 +30,9 @@
   				</div>
   			</div>
   			<div class = "col-xs-offset-1 col-xs-2" id = "settings">
-          <a href = "index.html" class="btn btn-primary" type="button">Log Out</a>
-  				<br>
-  				<br>
-  				<a type = "button" class = "btn btn-info">Settings</a>
+          <button class="btn btn-primary sb" type="button" id="logout">Log Out</button>
+          <br>
+  				<button type = "button" class = "btn btn-info sb">Settings</button>
   			</div>
   		</div>
   	</div>
@@ -74,7 +73,7 @@
   		</div>
   	</div>
 
-	<div class="modal fade" id="draftsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="draftsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -91,16 +90,16 @@
                 </div>
                 <div class = "row">
                   <select class="form-control" size = "6" id = "formselect">
-                    <option value="duty">Duty Log (2 hours ago)</option>
-                    <option value="proposal">Event Proposal (yesterday)</option>
-                    <option value="evaluation">Event Evaluation (02/25/14) </option>
+                    <option value="duty">   Duty Log (2/8/14) </option>
+                    <option value="proposal">Event Proposal (2/3/14)</option>
+                    <option value="evaluation">Event Evaluation (2/1/14) </option>
                   </select>
                 </div>
               </div>
             </div>
           </div>
           <div class="modal-footer" id = "loginButtonModal">
-            <button type="button" class="btn btn-primary" id = "formselection">Continue</button>
+            <a href = "DutyLog_draft.html"> <button type="button" class="btn btn-primary" id = "formselection">Continue</button> </a>
           </div>
         </div>
       </div>
@@ -109,8 +108,7 @@
 	<div class = "container" id = "CAnow">
 		<div class = "row">
 			<div class = "col-md-12">
-                <legend align="center">CA Now</legend>
-                <br>
+        <legend>Home</legend>
 			</div>
 		</div>
 		<div class = "row">

@@ -1,8 +1,9 @@
 /*MENUBAR CSS*/
 .menubar {
-	background-color: #2E6A7F;
+  background: #255565;
   padding-top: 10px;
   z-index: 2;
+  padding-bottom: 10px;
 }
 
 #fixed {
@@ -13,15 +14,17 @@
 
 #settings {
   position: relative;
-  top: 10px;
+  top: 15px;
   left: 50px;
+}
+
+.sb {
+  margin-bottom: 10px;
 }
 
 #logo {
   position: relative;
   font-size: 400%;
-  margin: 0 auto;
-  top: -2px;
   left: 20px;
 }
 
@@ -60,7 +63,7 @@
 	text-decoration: none;
   font-size: 125%;
   display: block;
-  background-color: #0B607F;
+  background-color: #0C6A8C;
   margin: 0 auto;
   width: 100px;
   height: 100px;

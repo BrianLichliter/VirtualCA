@@ -14,6 +14,22 @@ $(document).ready(function() {
 			$("#submit").attr("disabled","disabled");
 		}
 	});
+
+	$(".form-control").keypress(function() {
+		$("#save").removeAttr("disabled");
+		$("#save").html("Save for later");
+	});
+
+	$("select").change(function() {
+		$("#save").removeAttr("disabled");
+		$("#save").html("Save for later");
+	});
+
+	$("#save").click(function() {
+		$("#save").attr("disabled","disabled");
+		$("#save").html("Saved");
+	});
+
 	$("#submit").click(function() {
 		bootbox.confirm("Are you sure?", function(result) {
 			if(result==true) {
@@ -21,7 +37,8 @@ $(document).ready(function() {
 			}
         });
 	});
+
 	$("#print").click(function() {
-		$("#formbody").printThis();
+		window.print();
 	});
 });

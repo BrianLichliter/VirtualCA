@@ -18,4 +18,8 @@ $(document).ready(function() {
 			$("#fixed").fadeOut();
 		}
 	});
+
+	$("#logout").click(function() {
+		window.location.href = "index.html";
+	});
 });

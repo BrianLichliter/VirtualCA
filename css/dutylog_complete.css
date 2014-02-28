@@ -11,3 +11,24 @@ top: 8px;
 .control-label {
 	text-align: left;
 }
+
+#FormButtons {
+	top: 80%;
+	left: 78.28%;
+	position: fixed;
+}
+
+.fb {
+	font-size: 115%;
+	min-width: 125px;
+	min-height: 40px;
+	margin-top: 10px;
+}
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}

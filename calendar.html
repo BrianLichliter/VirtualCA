@@ -38,10 +38,9 @@
   				</div>
   			</div>
   			<div class = "col-xs-offset-1 col-xs-2" id = "settings">
-  				<button type = "button" class = "btn btn-primary">Log Out</button>
-  				<br>
-  				<br>
-  				<button type = "button" class = "btn btn-info">Settings</button>
+          <button class="btn btn-primary sb" type="button" id="logout">Log Out</button>
+          <br>
+  				<button type = "button" class = "btn btn-info sb">Settings</button>
   			</div>
   		</div>
   	</div>
@@ -81,37 +80,37 @@
 			</div>
 		</div>
 	</div>
-	<div class="modal fade" id="draftsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myModalLabel">Drafts</h4>
-				</div>
-				<div class="modal-body">
-					<div class = "row">
-						<div class = "col-xs-offset-3 col-xs-6">
-							<div class = "row">
-								<div class = "col-xs-offset-2 col-xs-8">
-									<h3>Select a draft</h3>
-								</div>
-							</div>
-							<div class = "row">
-								<select class="form-control" size = "6" id = "formselect">
-									<option value="duty">   Duty Log 02/07/14 </option>
-									<option value="proposal">Event Proposal (yesterday)</option>
-									<option value="evaluation">Event Evaluation (02/25/14) </option>
-								</select>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer" id = "loginButtonModal">
-					<a href = "DutyLog_draft.html"> <button type="button" class="btn btn-primary" id = "formselection">Continue</button> </a>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="modal fade" id="draftsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Drafts</h4>
+          </div>
+          <div class="modal-body">
+            <div class = "row">
+              <div class = "col-xs-offset-3 col-xs-6">
+                <div class = "row">
+                  <div class = "col-xs-offset-2 col-xs-8">
+                    <h3>Select a draft</h3>
+                  </div>
+                </div>
+                <div class = "row">
+                  <select class="form-control" size = "6" id = "formselect">
+                    <option value="duty">   Duty Log (2/8/14) </option>
+                    <option value="proposal">Event Proposal (2/3/14)</option>
+                    <option value="evaluation">Event Evaluation (2/1/14) </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer" id = "loginButtonModal">
+            <a href = "DutyLog_draft.html"> <button type="button" class="btn btn-primary" id = "formselection">Continue</button> </a>
+          </div>
+        </div>
+      </div>
+    </div>
 	<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 	<div class="container" id = "calendar">
 		<div class = "row">
@@ -138,11 +137,8 @@
 				<!-- Responsive calendar - END -->
 			</div>
 			<div class = "col-xs-4" id = "display">
-			<p id=title> Friday, February 7th</p>
-			
-			<a href = "DutyLog_complete.html" class= "cal_link"> <span id="form"> Duty Log </span>  Jane Doe </a> </br>
-			<a href = # class= "cal_link"> <span id="form">Event Proposal </span>  John Smith </a> </br>
-			<a href = # class= "cal_link"> <span id="form"> Matainence Request </span> Jane Doe</a> </br>
+				<p id="title"> Friday, February 8th</p>
+				<a href = "DutyLog_complete.html" class= "cal_link"><b>Duty Log</b> Jane Doe</a>
 			</div>
 		</div>
 	</div>
@@ -156,11 +152,8 @@
 			$(".responsive-calendar").responsiveCalendar({
 				time: '2014-02',
 				events: {
-					"2013-04-30": {"number": 5, "url": "http://w3widgets.com/responsive-slider"},
-					"2013-04-26": {"number": 1, "url": "http://w3widgets.com"}, 
-					"2013-05-03":{"number": 1}, 
-					"2013-06-12": {}}
-					
+					"2014-02-08": {"number": 1},
+				}
 				});
 				
 		
