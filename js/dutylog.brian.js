@@ -1,16 +1,17 @@
-$(document).ready(function() {
+$(document).ready(function() {	
 	$(window).scroll(
 	{
 	}, 
 	function () {
 		var currentTop = $(window).scrollTop();
 		var Bottom = $(window).height();
+		var tolerance = -100;
 
-		if (currentTop - Bottom == 0) {
-			$("#submit").fadeIn();
+		if (currentTop - Bottom >= tolerance) {
+			$("#submit").removeAttr("disabled");
 		}
-		else if (currentTop - Bottom < 0) {
-			$("#submit").fadeOut();
+		else if (currentTop - Bottom < tolerance) {
+			$("#submit").attr("disabled","disabled");
 		}
 	});
 });
