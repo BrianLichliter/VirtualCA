@@ -15,7 +15,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/homepage.css" rel="stylesheet">
 	<link href="css/dutylog.brian.css" rel="stylesheet">
-  <link href="css/multiple-select.css" rel="stylesheet"/>
+	<link href="css/multiple-select.css" rel="stylesheet"/>
 
 	<!-- Just for debugging purposes. Don't actually copy this line! -->
 	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -131,27 +131,21 @@
   					<!-- Duty Log -->
   					<div class="form-group">
   						<legend>Duty Log</legend>
-
-              <div id="rec_cont">
-                <div class = "row">
-                <div class = "col-md-4"><p align = "right">Recipients:</p></div>
-                <div class = "col-md-8">
-                  <select id="recipient" multiple="multiple" placeholder = "recipients">
-                    <option value="1" selected="selected">Robert Mill (RD)</option>
-                    <option value="3" selected="selected">DefUser2</option>
-                    <option value="2">Michael Smith (CA)</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-    
-
-            
-            </div>
-  					
-
-
-
+  						<div id="rec_cont">
+  							<div class = "row">
+  								<div class = "col-md-4">
+  									<p align = "right">Recipients:</p>
+  								</div>
+  								<div class = "col-md-8">
+  									<select id="recipient" multiple="multiple" placeholder = "recipients">
+  										<option value="1" selected="selected">Robert Mill (RD)</option>
+  										<option value="3" selected="selected">DefUser2</option>
+  										<option value="2">Michael Smith (CA)</option>
+  									</select>
+  								</div>
+  							</div>
+  						</div>
+  					</div>
   					<!-- Name -->
   					<div class="form-group">
   						<label class="col-md-2 control-label">Name:</label>
@@ -159,19 +153,6 @@
   							<input type="name" class="form-control input-md" id="inputName" placeholder="Your Name">
   						</div>
   					</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   					<div class="form-group">
   						<label class="col-md-2 control-label">Area:</label>
@@ -267,18 +248,18 @@
   		</div>
   	</div>
 
-        <div id="FormButtons" class = "col-md-2">
-            <div class="form-group">
-              <label for="inputEmail3" class="col-md-4 control-label"></label>
-                <div class="col-lg-2">                     
-                  <button class="fb btn btn-info" id="save">Save for Later</button>
-                
-                  <button class="fb btn btn-warning" id="print">Print</button>
-            
-                  <button class="fb btn btn-success" disabled = "disabled" id = "submit">Submit</button>
-                </div>
-            </div> 
-        </div>
+  	<div id="FormButtons" class = "col-md-2">
+  		<div class="form-group">
+  			<label for="inputEmail3" class="col-md-4 control-label"></label>
+  			<div class="col-lg-2">                     
+  				<button class="fb btn btn-info" id="save">Save for Later</button>
+
+  				<button class="fb btn btn-warning" id="print">Print</button>
+
+  				<button class="fb btn btn-success" disabled = "disabled" id = "submit">Submit</button>
+  			</div>
+  		</div> 
+  	</div>
   	<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
         <!-- Bootstrap core JavaScript
         ================================================== -->
@@ -291,7 +272,7 @@
         <script src="js/printThis.js"></script>
         <script src="js/jquery.multiple.select.js"></script>
         <script>
-          $('select').multipleSelect();
+        	$('#recipient').multipleSelect();
         </script>
     </body>
     </html>
