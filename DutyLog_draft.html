@@ -14,7 +14,7 @@
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/homepage.css" rel="stylesheet">
-	<link href="css/dutylog.complete.css" rel="stylesheet">
+	<link href="css/dutylog.brian.css" rel="stylesheet">
 
 	<!-- Just for debugging purposes. Don't actually copy this line! -->
 	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -105,7 +105,7 @@
   							</div>
   							<div class = "row">
   								<select class="form-control" size = "6" id = "formselect">
-  									<option value="duty">Duty Log (2 hours ago)</option>
+  									<option value="duty"> Duty Log (02/07/14)</option>
   									<option value="proposal">Event Proposal (yesterday)</option>
   									<option value="evaluation">Event Evaluation (02/25/14) </option>
   								</select>
@@ -132,7 +132,7 @@
   					<div class="form-group">
   						<label class="col-md-2 control-label">Name:</label>
   						<div class="col-md-9">
-  							<input type="name" class="form-control input-md" id="inputName" placeholder="Your Name">
+  							<input cols="1" type="name" class="form-control input-md" id="inputName" value="Jane Doe" placeholder="Your Name">
   						</div>
   					</div>
 
@@ -140,7 +140,7 @@
   						<label class="col-md-2 control-label">Area:</label>
   						<div class="col-md-9">
   							<select id="area" name="area" class="form-control input-md">
-  								<option value="" selected="selected">(please select area)</option>
+  								<option value="AL" >Allison</option>
   								<option value="AL">Allison</option>
   								<option value="GL">Glass</option>
   								<option value="KE">Kelder</option>
@@ -152,77 +152,79 @@
   					<div class="form-group">
   						<label class="col-md-2 control-label">Date:</label>
   						<div class="col-md-9">
-  							<input type="date" class="form-control input-md" id="inputName" placeholder="Duty Date">
+  							<input type="name" class="form-control input-md" id="inputName" value="02-08-14" placeholder="Duty Date">
   						</div>
   					</div>
 
   					<div class="form-group">
   						<label class="col-md-2 control-label">1st Round Time:</label>
   						<div class="col-md-9">
-  							<input type="time" class="form-control input-md" id="inputName" placeholder="hh:mm AM/PM">
+  							<input type="name" class="form-control input-md" id="inputName" value="08:00 PM" placeholder="hh:mm AM/PM">
   						</div>
   					</div>
 
   					<div class="form-group">
   						<label class="col-md-2 control-label">2nd Round Time:</label>
   						<div class="col-md-9">
-  							<input type="time" class="form-control input-md" id="inputName" placeholder="hh:mm AM/PM">
+  							<input type="name" class="form-control input-md" id="inputName" value="10:00 PM" placeholder="hh:mm AM/PM">
   						</div>
   					</div>
 
   					<div class="form-group">
   						<label class="col-md-2 control-label">3rd Round Time:</label>
   						<div class="col-md-9">
-  							<input type="time" class="form-control input-md" id="inputName" placeholder="hh:mm AM/PM">
+  							<input type="name" class="form-control input-md" id="inputName"  value="11:50 PM" placeholder="hh:mm AM/PM">
   						</div>
   					</div>
 
   					<div class="form-group">
   						<label class="col-md-2 control-label">Security and Safety Concerns:</label>
   						<div class="col-md-9">                     
-  							<textarea class="form-control input-md" rows="3" id="Resident Concerns" name="Resident Concerns"></textarea>
+  							<textarea class="form-control input-md" rows="3" id="Resident Concerns" name="Resident Concerns">The fire door was left propped open on the third floor of Allison Hall. Please remind your residents to keep firedoors closed at all times.
+							</textarea>
   						</div>
   					</div>
 
   					<div class="form-group">
   						<label class="col-md-2 control-label ">Conflict and Behavioral Concerns:</label>
   						<div class="col-md-9">                     
-  							<textarea class="form-control input-md" rows="3" id="Resident Concerns" name="Resident Concerns"></textarea>
+  							<textarea class="form-control input-md" rows="3" id="Resident Concerns" name="Resident Concerns">None</textarea>
   						</div>
   					</div>
 
   					<div class="form-group">
   						<label class="col-md-2 control-label">Emergency and Health Concerns:</label>
   						<div class="col-md-9">                     
-  							<textarea class="form-control input-md" rows="3" id="Resident Concerns" name="Resident Concerns"></textarea>
+  							<textarea class="form-control input-md" rows="3" id="Resident Concerns" name="Resident Concerns"> None
+							</textarea>
   						</div>
   					</div>
 
   					<div class="form-group">
   						<label class="col-md-2 control-label">Building and Maintenance Concerns:</label>
   						<div class="col-md-9">                     
-  							<textarea class="form-control input-md" rows="3" id="Resident Concerns" name="Resident Concerns"></textarea>
+  							<textarea class="form-control input-md" rows="3" id="Resident Concerns" name="Resident Concerns">The Allison third floor kitchen sink has been leaking. Two of the light bulbs in the Rec Room need to be replaced.</textarea>
   						</div>
   					</div>
 
   					<div class="form-group">
   						<label class="col-md-2 control-label">Staff Concerns:</label>
   						<div class="col-md-9">                     
-  							<textarea class="form-control input-md" rows="3" id="Resident Concerns" name="Resident Concerns"></textarea>
+  							<textarea class="form-control input-md" rows="3" id="Resident Concerns" name="Resident Concerns">None</textarea>
   						</div>
   					</div>
 
   					<div class="form-group">
   						<label class="col-md-2 control-label">Resident Concerns:</label>
   						<div class="col-md-9">                     
-  							<textarea class="form-control input-md" rows="3" id="Resident Concerns" name="Resident Concerns"></textarea>
+  							<textarea class="form-control input-md" rows="3" id="Resident Concerns" name="Resident Concerns">Brian was locked out by his roommate while taking a shower and needed his room unlocked. This is the third time that this has happened just this month so I politely reminded him that he needs to remember to bring his key with him at al times.</textarea>
   						</div>
   					</div>
 
   					<div class="form-group">
   						<label class="col-md-2 control-label">Miscellaneous:</label>
   						<div class="col-md-9">                     
-  							<textarea class="form-control input-md" rows="3" id="Resident Concerns" name="Resident Concerns"></textarea>
+  							<textarea class="form-control input-md" rows="3" id="Resident Concerns" name="Resident Concerns">Remember to encourage your residents to post compliments for their friends on the "Compliments Board" in the Allison Lobby.</textarea>
   						</div>
   					</div>
   				</form>
