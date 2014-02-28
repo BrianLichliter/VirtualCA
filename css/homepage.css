@@ -12,12 +12,15 @@
   z-index: 2;
 }
 
-.links{
+#links{
   font-weight: bold;
   text-decoration: underline;
-  color: #383838;
+  color: #545454;
+}
 
-
+#NowTitles {
+  font-size: 120%;
+  font-weight: bold;
 
 }
 
@@ -107,5 +110,11 @@
 }
 
 #CAnowRight {
+
+}
+
+#weathertitle {
+padding-top: 180px;
+
 
 }

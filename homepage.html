@@ -10,6 +10,21 @@
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/homepage.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/ui-lightness/jquery-ui.css"/> 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script src="js/weather.js"></script>
+<link rel="stylesheet" href="css/weather.css" />
+<!--[if lt IE 8]>
+  <link rel="stylesheet" type="text/css" href="css/weather_ie7down.css" />
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/ui-lightness/jquery-ui.css"/> 
+
+
   </head>
   <body>
   	<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
@@ -104,10 +119,11 @@
         </div>
       </div>
     </div>
+
 	<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 	<div class = "container" id = "CAnow">
 		<div class = "row">
-			<div class = "col-md-12">
+			<div class = "col-md-12" id="NowTitles">
         <legend>Home</legend>
 			</div>
 		</div>
@@ -116,38 +132,76 @@
 				<div class = "row">
 					<div class = "col-md-12">
 						<div class = "row info">
+              <div class = "col-md-offset-1 col-md-10" id = "NowTitles">
+                Event Requirements:
+              </div>
+              <br>
+              <br>
 							<div class = "col-md-offset-1 col-md-10">
-								You have completed 3 of your 5 events for the quarter.
-								</br>
-								You still need to complete:
+								3 quarterly events remaining:
+                <div class = "col-md-offset-1 col-md-10">
+								Event category 2
 								<br>
-								Event 2
-								<br>
-								Event 4
+								Event category 4
+              </div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
 			<div class = "col-md-4 col-md-offset-2" id = "CAnowRight">
 				<div class = "row">
 					<div class = "col-md-12">
 						<div class = "row info">
-							<div class = "col-md-offset-1 col-md-10">
-								Here is a list of useful links:
-								</br>
-								<a href = "https://www.myschoolbuilding.com/myschoolbuilding/mygateway.asp?acctnum=39167488" target="_blank" class= "links">School Dude</a>
+							<div class = "col-md-offset-1 col-md-10" id = "NowTitles">
+								Useful links:
+              </div>
+              
+              <div class = "col-md-offset-1 col-md-10">
 								<br>
-								<a href = "http://whentowork.com/" target="_blank" class= "links">WhenToWork</a>
+								<a href = "https://www.myschoolbuilding.com/myschoolbuilding/mygateway.asp?acctnum=39167488" target="_blank" id= "links">School Dude</a>
 								<br>
-								<a href = "https://www.google.com/calendar" target="_blank" class= "links">Google Calendar</a>
+								<a href = "http://whentowork.com/" target="_blank" id= "links">WhenToWork</a>
 								<br>
-								<a href = "https://webmail.com.edu/exchange" target="_blank" class= "links">E-mail</a>
+								<a href = "https://www.google.com/calendar" target="_blank" id= "links">Google Calendar</a>
+								<br>
+								<a href = "https://webmail.com.edu/exchange" target="_blank" id= "links">E-mail</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
+      <div class="weather col-md-offset-1" id="weathertitle">Evanston,IL</div>
+
+
+<script type="text/javascript">
+        
+       $(document).ready(function () {
+           $(".weather").weatherFeed({relativeTimeZone:true});
+        });
+    </script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+
+
+
 		</div>
 	</div>
     <!-- Bootstrap core JavaScript
@@ -156,5 +210,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/homepage.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <script src="js/weather.js"></script>
 </body>
 </html>
