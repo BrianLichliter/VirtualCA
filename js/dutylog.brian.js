@@ -22,8 +22,6 @@ $(document).ready(function() {
         });
 	});
 	$("#print").click(function() {
-		$("#formbody").printThis(
-
-		);
+		$("#formbody").printThis();
 	});
 });

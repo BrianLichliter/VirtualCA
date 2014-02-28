@@ -130,14 +130,20 @@
   				<form class="form-horizontal">
   					<!-- Duty Log -->
   					<div class="form-group">
-  						<legend>Duty Log
-                  <select id="recipient" multiple="multiple">
-                    <option value="1">January</option>
-                    <option value="12">December</option>
-                  </select>
-              </legend>
+  						<legend>Duty Log</legend>
 
-              
+              <div id="rec_cont">
+                <div class = "row">
+                <div class = "col-md-4"><p align = "right">Recipients:</p></div>
+                <div class = "col-md-8">
+                  <select id="recipient" multiple="multiple" placeholder = "recipients">
+                    <option value="1" selected="selected">Robert Mill (RD)</option>
+                    <option value="3" selected="selected">DefUser2</option>
+                    <option value="2">Michael Smith (CA)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
     
 
             

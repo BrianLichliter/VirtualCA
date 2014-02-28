@@ -23,9 +23,15 @@
 
 }
 
+#rec_cont {
+	position: absolute;
+	z-index: 1;
+	left: 16.1%;
+	top: 0%;
+}
+
 #recipient {
-	
-	width: 300px;
+	width: 400px;
 	top: 32%;
 	left: 50%;
 }
