@@ -9,12 +9,13 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Starter Template for Bootstrap</title>
+	<title>Duty Log</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/homepage.css" rel="stylesheet">
-	<link href="css/dutylog.complete.css" rel="stylesheet">
+	<link href="css/dutylog.brian.css" rel="stylesheet">
+  <link href="css/multiple-select.css" rel="stylesheet"/>
 
 	<!-- Just for debugging purposes. Don't actually copy this line! -->
 	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -120,14 +121,31 @@
   		</div>
   	</div>
   	<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+
+
   	<div class="container" id = "formbody">
   		<div class="row">
   			<div class = "col-md-offset-2 col-md-8">
   				<form class="form-horizontal">
   					<!-- Duty Log -->
   					<div class="form-group">
-  						<legend>Duty Log</legend>
-  					</div>
+  						<legend>Duty Log
+                  <select id="recipient" multiple="multiple">
+                    <option value="1">January</option>
+                    <option value="12">December</option>
+                  </select>
+              </legend>
+
+              
+    
+
+            
+            </div>
+  					
+
+
+
   					<!-- Name -->
   					<div class="form-group">
   						<label class="col-md-2 control-label">Name:</label>
@@ -135,6 +153,19 @@
   							<input type="name" class="form-control input-md" id="inputName" placeholder="Your Name">
   						</div>
   					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   					<div class="form-group">
   						<label class="col-md-2 control-label">Area:</label>
@@ -229,6 +260,19 @@
   			</div>
   		</div>
   	</div>
+
+        <div id="FormButtons" class = "col-md-2">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-md-4 control-label"></label>
+                <div class="col-lg-2">                     
+                  <button class="fb btn btn-info" id="save">Save for Later</button>
+                
+                  <button class="fb btn btn-warning" id="print">Print</button>
+            
+                  <button class="fb btn btn-success" disabled = "disabled" id = "submit">Submit</button>
+                </div>
+            </div> 
+        </div>
   	<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
         <!-- Bootstrap core JavaScript
         ================================================== -->
@@ -236,5 +280,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/homepage.js"></script>
+        <script src="js/dutylog.brian.js"></script>
+        <script src="js/bootbox.min.js"></script>
+        <script src="js/printThis.js"></script>
+        <script src="js/jquery.multiple.select.js"></script>
+        <script>
+          $('select').multipleSelect();
+        </script>
     </body>
     </html>

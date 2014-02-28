@@ -1,7 +1,31 @@
 #formbody {
 	padding-top: 150px;
+	position: static;
+	padding-bottom: 50px;
 }
 
 .control-label {
 	text-align: left;
+}
+
+#FormButtons {
+	top: 73%;
+	left: 78.28%;
+	position: fixed;
+
+}
+
+.fb {
+	font-size: 115%;
+	min-width: 125px;
+	min-height: 40px;
+	margin-top: 10px;
+
+}
+
+#recipient {
+	
+	width: 300px;
+	top: 32%;
+	left: 50%;
 }
