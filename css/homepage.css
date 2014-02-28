@@ -12,6 +12,15 @@
   z-index: 2;
 }
 
+.links{
+  font-weight: bold;
+  text-decoration: underline;
+  color: #383838;
+
+
+
+}
+
 #settings {
   position: relative;
   top: 15px;
