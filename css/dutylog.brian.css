@@ -10,13 +10,14 @@
 
 #FormButtons {
 	top: 73%;
-	left: 80%;
+	left: 78.28%;
 	position: fixed;
 
 }
 
 .fb {
-	min-width: 120px;
+	font-size: 115%;
+	min-width: 125px;
 	min-height: 40px;
 	margin-top: 10px;
 
