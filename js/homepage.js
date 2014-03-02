@@ -22,4 +22,9 @@ $(document).ready(function() {
 	$("#logout").click(function() {
 		window.location.href = "index.html";
 	});
-});
+
+	$("#setting").click(function() {
+		window.location.href = "Settings.html";
+	});
+	
+	});
