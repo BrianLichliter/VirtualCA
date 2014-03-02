@@ -1,24 +1,31 @@
 $(document).ready(function() {	
-	$(window).scroll(
-	{
-	}, 
-	function () {
-		var currentTop = $(window).scrollTop();
-		var Bottom = $(window).height();
-		var tolerance = -100;
 
-		if (currentTop - Bottom >= tolerance) {
-			$("#submit").removeAttr("disabled");
-		}
-		else if (currentTop - Bottom < tolerance) {
-			$("#submit").attr("disabled","disabled");
-		}
-	});
+	if ($("#inputName").val() != "" && $("#area").val() != "" && $("#date").val() != "" && $("#firstround").val() != "") {
+		$("#submit").removeAttr("disabled");
+	} else {
+		$("#submit").attr("disabled","disabled");
+	}
 
 	$(".form-control").keypress(function() {
 		$("#save").removeAttr("disabled");
 		$("#save").html("Save for later");
 	});
+
+	$(".req").keypress(function() {
+		if ($("#inputName").val() != "" && $("#area").val() != "" && $("#date").val() != "" && $("#firstround").val() != "") {
+			$("#submit").removeAttr("disabled");
+		} else {
+			$("#submit").attr("disabled","disabled");
+		}
+	})
+
+	$(".req").change(function() {
+		if ($("#inputName").val() != "" && $("#area").val() != "" && $("#date").val() != "" && $("#firstround").val() != "") {
+			$("#submit").removeAttr("disabled");
+		} else {
+			$("#submit").attr("disabled","disabled");
+		}
+	})
 
 	$("select").change(function() {
 		$("#save").removeAttr("disabled");
