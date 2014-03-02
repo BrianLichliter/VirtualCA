@@ -1,0 +1,49 @@
+#formbody {
+	padding-top: 150px;
+	position: static;
+	padding-bottom: 50px;
+}
+
+.control-label {
+	text-align: left;
+}
+
+#FormButtons {
+	top: 90%;
+	left: 78.28%;
+	position: fixed;
+
+}
+
+h1
+{
+font-size: 120%
+}
+.radio_button
+{
+position: relative;
+top:8px;
+margin-left:15px;
+}
+.fb {
+	font-size: 115%;
+	min-width: 125px;
+	min-height: 40px;
+	margin-top: 10px;
+
+}
+
+#rec_cont {
+	position: absolute;
+	z-index: 1;
+	left: 16.1%;
+	top: 0%;
+}
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
