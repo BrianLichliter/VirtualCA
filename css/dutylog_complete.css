@@ -18,6 +18,23 @@ top: 8px;
 	position: fixed;
 }
 
+#rec_cont {
+	position: absolute;
+	z-index: 1;
+	left: 16.1%;
+	top: 0%;
+}
+
+#label-rec {
+	top: 100%;
+}
+
+#recipient {
+	width: 400px;
+	top: 32%;
+	left: 50%;
+}
+
 .fb {
 	font-size: 115%;
 	min-width: 125px;

@@ -30,6 +30,10 @@
 	top: 0%;
 }
 
+#rec {
+	bottom: 5%;
+}
+
 #recipient {
 	width: 400px;
 	top: 32%;
