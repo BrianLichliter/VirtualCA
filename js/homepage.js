@@ -6,6 +6,13 @@ $(document).ready(function() {
 		}
 	});
 
+	$('#draftselection').click(function() {
+		var form = $( "#draftselect" ).val();
+		if (form == "duty_draft") {
+			window.location.href = "DutyLog_draft.html";
+		}
+	});
+
 	$(window).scroll(
 	{
 	}, 
