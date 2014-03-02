@@ -1,6 +1,15 @@
+/*BODY CSS*/
+body {
+  background: -webkit-linear-gradient(white, #CDB6C3); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white, #CDB6C3); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white, #CDB6C3); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white, #CDB6C3); /* Standard syntax */
+}
+
 /*MENUBAR CSS*/
 .menubar {
-  background: #255565;
+  /*background: #255565;*/
+  background: rgb(101,37,74);
   padding-top: 10px;
   z-index: 2;
   padding-bottom: 10px;
@@ -99,10 +108,10 @@
 .info {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-left: 2px solid #2E6A7F;
-  border-right: 2px solid #2E6A7F;
-  border-top: 2px solid #2E6A7F;
-  border-bottom: 2px solid #2E6A7F;
+  border-left: 2px solid rgb(101,37,74);
+  border-right: 2px solid rgb(101,37,74);
+  border-top: 2px solid rgb(101,37,74);
+  border-bottom: 2px solid rgb(101,37,74);
   background-color: #F0F8FF;
 }
 
