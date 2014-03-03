@@ -17,14 +17,48 @@
 
 h1
 {
-font-size: 120%
+font-weight: bold;
+font-size: 120%;
+}
+
+h2
+{
+font-size: 110%;
 }
 .radio_button
 {
 position: relative;
 top:8px;
-margin-left:15px;
+left:20px;
+margin-right:75px;
 }
+
+.opt1
+{
+font-weight: bold;
+position: relative;
+left: 140px;
+text-align: center;
+}
+
+.opt2
+{
+font-weight: bold;
+position: relative;
+left: 180px;
+text-align: center;
+
+}
+
+.opt3
+{
+font-weight: bold;
+position: relative;
+left: 220px;
+text-align: center;
+
+}
+
 .fb {
 	font-size: 115%;
 	min-width: 125px;
