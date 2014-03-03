@@ -7,7 +7,7 @@
 color: white;
 height: 450px; 
 size: 20px;
-background: #2E6A7F;
+background: linear-gradient(rgb(67,37,74), #531E69);
 border-style: none;
 padding-top: 20px;
 -webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.7);
