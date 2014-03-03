@@ -67,6 +67,7 @@ body {
   text-align: center;
   line-height: 100px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .menubar .draft {
@@ -82,6 +83,7 @@ body {
   text-align: center;
   line-height: 100px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .menubar .archive {
@@ -114,11 +116,8 @@ body {
 .info {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-left: 2px solid rgb(101,37,74);
-  border-right: 2px solid rgb(101,37,74);
-  border-top: 2px solid rgb(101,37,74);
-  border-bottom: 2px solid rgb(101,37,74);
-
+  background-color: white;
+  box-shadow: 0px 3px 8px gray;
 }
 
 #CAnowLeft {

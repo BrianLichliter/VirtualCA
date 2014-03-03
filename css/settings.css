@@ -29,7 +29,7 @@ font-size: 110%;
 {
 position: relative;
 top:8px;
-left:20px;
+left:14%;
 margin-right:75px;
 }
 
@@ -38,7 +38,7 @@ margin-right:75px;
 font-weight: bold;
 position: relative;
 left: 140px;
-text-align: center;
+text-align: left;
 }
 
 .opt2
@@ -46,7 +46,7 @@ text-align: center;
 font-weight: bold;
 position: relative;
 left: 180px;
-text-align: center;
+text-align: left;
 
 }
 
@@ -55,7 +55,7 @@ text-align: center;
 font-weight: bold;
 position: relative;
 left: 215px;
-text-align: center;
+text-align: left;
 
 }
 
