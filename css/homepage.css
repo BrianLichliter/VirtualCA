@@ -14,7 +14,7 @@ body {
   background: -webkit-linear-gradient(rgb(101,37,74), #4f1c39); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(rgb(101,37,74), #4f1c39); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(rgb(101,37,74), #4f1c39); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(rgb(87,37,74), #471A59); /* Standard syntax */
+  background: linear-gradient(rgb(67,37,74), #471A59); /* Standard syntax */
   padding-top: 10px;
   z-index: 2;
   padding-bottom: 10px;
