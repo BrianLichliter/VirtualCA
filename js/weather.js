@@ -131,7 +131,7 @@
                             }
 
                             //now lets populate the forcast items
-                            var weatherListItem = "<h2 class='weather'>" + title + " " + hourMod + (today.getHours() + dstOffset) + minMod + today.getMinutes() + " " + timeZone + " " + "<span class='lastUpdate'>Last Updated at " + hourMod + (today.getHours() + dstOffset) + minMod + today.getMinutes() + " " + timeZone + "</span></h2><ul class='weatherSummary'>";
+                            var weatherListItem = "<h2 class='weather'>" + title + " "  + "<span class='lastUpdate'>Last Updated at " + time + " " + timeZone + "</span></h2><ul class='weatherSummary'>";
                             var tempSummary;
                             $weatherTag.find(".loadMessage").text("Generating Weather: " + title);
                             //lets create today's current weather item
