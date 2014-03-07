@@ -13,6 +13,14 @@ $(document).ready(function() {
 		}
 	});
 
+	$('#duty').dblclick(function() {
+		window.location.href = "dutylog.brian.html";
+	});
+
+	$('#dutydraft').dblclick(function() {
+		window.location.href = "DutyLog_draft.html";
+	});
+
 	$(window).scroll(
 	{
 	}, 
