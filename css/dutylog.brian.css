@@ -15,6 +15,10 @@
 
 }
 
+.moove {
+	left:-8%;
+}
+
 .fb {
 	font-size: 115%;
 	min-width: 125px;

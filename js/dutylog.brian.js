@@ -1,6 +1,6 @@
 $(document).ready(function() {	
 
-	if ($("#inputName").val() != "" && $("#area").val() != "" && $("#date").val() != "" && $("#firstround").val() != "") {
+	if ($("#inputName").val() != "" && $("#area").val() != "" && $("#date").val() != "" && $("#firstround").val() != "" && $("#secondround").val() != "") {
 		$("#submit").removeAttr("disabled");
 	} else {
 		$("#submit").attr("disabled","disabled");
@@ -12,7 +12,7 @@ $(document).ready(function() {
 	});
 
 	$(".req").keypress(function() {
-		if ($("#inputName").val() != "" && $("#area").val() != "" && $("#date").val() != "" && $("#firstround").val() != "") {
+		if ($("#inputName").val() != "" && $("#area").val() != "" && $("#date").val() != "" && $("#firstround").val() != "" && $("#secondround").val() != "") {
 			$("#submit").removeAttr("disabled");
 		} else {
 			$("#submit").attr("disabled","disabled");
@@ -20,7 +20,7 @@ $(document).ready(function() {
 	})
 
 	$(".req").change(function() {
-		if ($("#inputName").val() != "" && $("#area").val() != "" && $("#date").val() != "" && $("#firstround").val() != "") {
+		if ($("#inputName").val() != "" && $("#area").val() != "" && $("#date").val() != "" && $("#firstround").val() != "" && $("#secondround").val() != "") {
 			$("#submit").removeAttr("disabled");
 		} else {
 			$("#submit").attr("disabled","disabled");
