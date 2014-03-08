@@ -12,6 +12,11 @@ top: 8px;
 	text-align: left;
 }
 
+.moove {
+	left:-8%;
+	text-align: justify;
+}
+
 #FormButtons {
 	top: 80%;
 	left: 78.28%;
