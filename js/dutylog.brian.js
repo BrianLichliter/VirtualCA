@@ -25,7 +25,6 @@ $(document).ready(function() {
 		}
 	})
 
-
 	$(".req").keypress(function() {
 		if ($("#inputName").val() != "" && $("#area").val() != "" && $("#date").val() != "" && $("#firstround").val() != "" && $("#secondround").val() != "") {
 			$("#submit").removeAttr("disabled");
