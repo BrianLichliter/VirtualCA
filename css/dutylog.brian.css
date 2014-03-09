@@ -9,7 +9,7 @@
 }
 
 #FormButtons {
-	top: 73%;
+	top: 68%;
 	left: 78.28%;
 	position: fixed;
 
@@ -28,16 +28,15 @@
 }
 
 #rec_cont {
+	top: 23%;
+	left: 64.75%;
 	position: absolute;
-	z-index: 1;
-	left: 16.1%;
-	top: 0%;
 }
 
-#recipient {
-	width: 400px;
-	top: 32%;
-	left: 50%;
+#recTitle_cont {
+	top: 24%;
+	left: 55.75%;
+	position: absolute;
 }
 
 @media print

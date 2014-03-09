@@ -11,6 +11,15 @@ $(document).ready(function() {
 		$("#save").html("Save for later");
 	});
 
+	$("#recipient").change(function() {
+		if ($("#recipient").val() == null || $("#recipient").val().length == 1) {
+			$("#recTitle").html("Recipient:");
+		} else {
+			$("#recTitle").html("Recipients:");
+		}
+	})
+
+
 	$(".req").keypress(function() {
 		if ($("#inputName").val() != "" && $("#area").val() != "" && $("#date").val() != "" && $("#firstround").val() != "" && $("#secondround").val() != "") {
 			$("#submit").removeAttr("disabled");
@@ -31,6 +40,7 @@ $(document).ready(function() {
 		$("#save").removeAttr("disabled");
 		$("#save").html("Save for later");
 	});
+
 
 	$("#save").click(function() {
 		$("#save").attr("disabled","disabled");

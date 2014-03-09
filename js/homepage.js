@@ -13,11 +13,14 @@ $(document).ready(function() {
 		}
 	});
 
-	$('#duty').dblclick(function() {
-		window.location.href = "dutylog.brian.html";
+	$('select#formselect > option').dblclick(function() {
+		console.log(this);
+		if ($(this).val() == "duty") {
+			window.location.href = "dutylog.brian.html";
+		}
 	});
 
-	$('#dutydraft').dblclick(function() {
+	$('select#draftselect > option').dblclick(function() {
 		window.location.href = "DutyLog_draft.html";
 	});
 

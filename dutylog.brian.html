@@ -12,10 +12,15 @@
 	<title>Duty Log</title>
 
 	<!-- Bootstrap core CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/homepage.css" rel="stylesheet">
-	<link href="css/dutylog.brian.css" rel="stylesheet">
-	<link href="css/multiple-select.css" rel="stylesheet"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css">
+
+  <link href="css/homepage.css" rel="stylesheet">
+  <link href="css/dutylog.brian.css" rel="stylesheet">
+
+  <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
 
 	<!-- Just for debugging purposes. Don't actually copy this line! -->
 	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -127,19 +132,6 @@
   					<!-- Duty Log -->
   					<div class="form-group">
   						<legend>Duty Log</legend>
-  						<div id="rec_cont">
-  							<div class = "row">
-  								<div class = "col-md-4">
-  									<p align = "right">Recipient(s):</p>
-  								</div>
-  								<div class = "col-md-8">
-  									<select id="recipient" multiple="multiple" placeholder = "recipients">
-  										<option value="1" selected="selected" disabled>Robert Mill (RD)</option>
-  										<option value="2">Michael Smith (CA)</option>
-  									</select>
-  								</div>
-  							</div>
-  						</div>
   					</div>
   					<!-- Name -->
   					<div class="form-group">
@@ -255,19 +247,38 @@
   			</div>
   		</div> 
   	</div>
+
+    <div class = "row" id = "recTitle_cont">
+      <div class = "col-md-12">
+        <p id = "recTitle">Recipient:</p>
+      </div>
+    </div>
+    <div id="rec_cont">
+      <div class = "row"
+        <div class = "col-md-12">
+          <select id = "recipient" class="multiselect" multiple="multiple">
+            <option value="multiselect-all">Select All</option>
+            <option value="1" selected>Robert Mill (RD)</option>
+            <option value="2">Michael Smith (CA)</option>
+          </select>
+        </div>
+      </div>
+      </div>
+    </div>
   	<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function() {
+            $('.multiselect').multiselect();
+          });
+        </script>
+
         <script src="js/homepage.js"></script>
         <script src="js/dutylog.brian.js"></script>
-        <script src="js/bootbox.min.js"></script>
-        <script src="js/printThis.js"></script>
-        <script src="js/jquery.multiple.select.js"></script>
-        <script>
-        	$('#recipient').multipleSelect();
-        </script>
+        
+        <script src="js/bootbox.min.js"></script> 
+
     </body>
     </html>
