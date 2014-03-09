@@ -1,5 +1,11 @@
 $(document).ready(function() {	
 
+	if ($("#recipient").val() == null || $("#recipient").val().length == 1) {
+		$("#recTitle").html("Recipient:");
+	} else {
+		$("#recTitle").html("Recipients:");
+	}
+
 	if ($("#inputName").val() != "" && $("#area").val() != "" && $("#date").val() != "" && $("#firstround").val() != "" && $("#secondround").val() != "") {
 		$("#submit").removeAttr("disabled");
 	} else {

@@ -171,7 +171,7 @@
             preventInputChangeEvent: false,
             nonSelectedText: 'None selected',
             nSelectedText: 'selected',
-            numberDisplayed: 3
+            numberDisplayed: 2
         },
 
         templates: {
