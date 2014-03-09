@@ -1,0 +1,19 @@
+#rec_cont {
+	top: 3.2%;
+	left: 65.93%;
+	position: absolute;
+}
+
+#recTitle_cont {
+	top: 4%;
+	left: 55.75%;
+	position: absolute;
+}
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
