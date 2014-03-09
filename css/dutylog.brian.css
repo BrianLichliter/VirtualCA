@@ -38,11 +38,3 @@
 	left: 55.75%;
 	position: absolute;
 }
-
-@media print
-{    
-    .no-print, .no-print *
-    {
-        display: none !important;
-    }
-}
