@@ -164,7 +164,7 @@
             selectAllText: ' Select all',
             selectAllValue: 'multiselect-all',
             enableFiltering: true,
-            enableCaseInsensitiveFiltering: false,
+            enableCaseInsensitiveFiltering: true,
             filterPlaceholder: 'Search',
             // possible options: 'text', 'value', 'both'
             filterBehavior: 'text',
