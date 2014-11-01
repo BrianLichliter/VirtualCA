@@ -48,6 +48,10 @@ body {
   left: -3%;
 }
 
+.NowText2 {
+  top: -10px;
+}
+
 #settings {
   position: relative;
   top: 15px;
